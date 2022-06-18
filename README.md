@@ -7,5 +7,6 @@ Reviews of up and coming programming languages
 
 ## todo
 
-* nim
-* zig
+* [nim](https://nim-lang.org/)
+* [zig](https://ziglang.org/)
+* [vala](https://valadoc.org/)
