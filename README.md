@@ -9,4 +9,5 @@ Reviews of up and coming programming languages
 
 * [nim](https://nim-lang.org/)
 * [zig](https://ziglang.org/)
+* [Odin](https://odin-lang.org/)
 * [vala](https://valadoc.org/)
