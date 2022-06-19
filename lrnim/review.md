@@ -7,13 +7,14 @@
 ```nim
 type
   T = ref object
+    x: int
 
 var t : T
 
-echo t
+echo t.x
 ```
 
-This simple example compiles and produces a segfult when executed. Removing the `ref` keyword makes `T` a default object similar to the approach of Go. My expectation here is for the compiler to catch use of `t`.
+This simple example compiles and produces a segfult when executed. Removing the `ref` keyword makes `T` a default object similar to the approach of Go. My expectation here is for the compiler to catch use of `t.x`.
 
 The [Language Manual](https://nim-lang.org/docs/manual.html) says
 
@@ -29,4 +30,4 @@ and
 
 The example uses the `ref` keyword and is thus a traced reference which should be safe. It appears it is currently not.
 
-Let's compare with Rust, which won't let this happen at all. The compiler disallows uninitialized variables, meaning any use of `t` would be caught.
+Let's compare with Rust, which won't let this happen at all. The compiler disallows uninitialized variables, meaning any use of `t` would be caught. And there is no concept of a `nil` value so the default to `nil` scenario could not happen.

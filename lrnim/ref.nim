@@ -1,8 +1,8 @@
 type
-  O = ref object
-    a : int
+  T = ref object
+    x: int
 
-var o : O
+var t : T
 
-echo o.a
+echo t.x
 

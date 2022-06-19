@@ -1,0 +1,30 @@
+{
+  "cacheVersion": "D20210525T193831",
+  "outputFile": "/Users/sandy/work/x-language-review/lrnim/ref",
+  "compile": [
+    [
+      "/Users/sandy/work/x-language-review/lrnim/@mref.nim.c",
+      "clang -c  -w -ferror-limit=3 -O3   -I/Users/sandy/.choosenim/toolchains/nim-1.6.6/lib -I/Users/sandy/work/x-language-review/lrnim -o /Users/sandy/work/x-language-review/lrnim/@mref.nim.c.o /Users/sandy/work/x-language-review/lrnim/@mref.nim.c"
+    ]
+  ],
+  "link": [
+    "/Users/sandy/work/x-language-review/lrnim/stdlib_digitsutils.nim.c.o",
+    "/Users/sandy/work/x-language-review/lrnim/stdlib_dollars.nim.c.o",
+    "/Users/sandy/work/x-language-review/lrnim/stdlib_io.nim.c.o",
+    "/Users/sandy/work/x-language-review/lrnim/stdlib_system.nim.c.o",
+    "/Users/sandy/work/x-language-review/lrnim/@mref.nim.c.o"
+  ],
+  "linkcmd": "clang   -o /Users/sandy/work/x-language-review/lrnim/ref /Users/sandy/work/x-language-review/lrnim/stdlib_digitsutils.nim.c.o /Users/sandy/work/x-language-review/lrnim/stdlib_dollars.nim.c.o /Users/sandy/work/x-language-review/lrnim/stdlib_io.nim.c.o /Users/sandy/work/x-language-review/lrnim/stdlib_system.nim.c.o /Users/sandy/work/x-language-review/lrnim/@mref.nim.c.o    -ldl",
+  "extraCmds": [],
+  "configFiles": [
+    "/Users/sandy/.choosenim/toolchains/nim-1.6.6/config/nim.cfg",
+    "/Users/sandy/.choosenim/toolchains/nim-1.6.6/config/config.nims"
+  ],
+  "stdinInput": false,
+  "projectIsCmd": false,
+  "cmdInput": "",
+  "currentDir": "/Users/sandy/work/x-language-review/lrnim",
+  "cmdline": "",
+  "depfiles": [],
+  "nimexe": ""
+}
