@@ -31,3 +31,9 @@ and
 The example uses the `ref` keyword and is thus a traced reference which should be safe. It appears it is currently not.
 
 Let's compare with Rust, which won't let this happen at all. The compiler disallows uninitialized variables, meaning any use of `t` would be caught. And there is no concept of a `nil` value so the default to `nil` scenario could not happen.
+
+However [strictNotNil](https://nim-lang.org/docs/manual_experimental.html#strict-not-nil-checking) fixes this. It's an experimental feature that doesn't work for all claimed cases
+
+> We show an error for each dereference ([], .field, [index] () etc) which is of a tracked expression which is in MaybeNil or Nil state. 
+
+but for the example we are using `nim c --experimental:strictNotNil ref.nim` works nicely to warn at compile time.

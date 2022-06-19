@@ -2,7 +2,9 @@ type
   T = ref object
     x: int
 
-var t : T
+proc p(t : T) =
+  echo t.x
 
-echo t.x
+var t : T
+p(t)
 
