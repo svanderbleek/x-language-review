@@ -1,9 +1,32 @@
 # Features
 
 I expect Nim to perform well on evaluation based on the quality of the [language manual](https://nim-lang.org/docs/manual.html), [test cases](https://github.com/nim-lal/tsts), and awareness of software verification shown with advanced ideas like [DrNim](https://nim-lang.org/docs/drnim.html).
-There is no formal model of Nim, but there aren't formal models of most languages except those that come from academia.
+Unlike the [V Language](https://vlang.io/) whose evaluation inspired this, the Nim language materials make far less claims so that helps too.
 
 I'm not a member of the Nim language community but I joined their [chat](https://nim-lang.org/community.html) and ran this article by them to ensure fairness. The community was great and offered me generous advice and support. Anyway let's get started!
+
+## Efficient
+
+Nim claims to be 
+
+> Efficient, expressive, elegant
+
+we can only really evaluate the efficient aspect so let's start there.
+
+> Nim generates native dependency-free executables, not dependent on a virtual machine, which are small and allow easy redistribution.
+
+For OSX we have
+
+```zsh
+% file ref
+ref: Mach-O 64-bit executable x86_64
+% otool -L ref
+ref:
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1311.0.0)%
+```
+
+which seems very minimal only using the system library. The file is small at 127KB. 
+
 
 ## Security and Memory Safety
 
