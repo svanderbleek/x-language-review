@@ -19,6 +19,7 @@ Up and coming languages make a variety of imprecise claims about features with n
 * [Diagnosing Memory, Thread, and Crash Issues Early](https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early)
 * [Address Sanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer)
 * [A Guide to Undefined Behavior in C and C++](https://blog.regehr.org/archives/213)
+* [What is memory safety and why does it matter?](https://www.memorysafety.org/docs/memory-safety/)
 
 ## candidates
 
@@ -27,6 +28,7 @@ Up and coming languages make a variety of imprecise claims about features with n
   * https://github.com/ziglang/zig/issues/3180
   * https://github.com/ziglang/zig/issues/1966
   * https://github.com/ziglang/zig/issues/2301
+  * https://ziglang.org/learn/overview/#performance-and-safety-choose-two
 * [Odin](https://odin-lang.org/)
 * [vala](https://valadoc.org/)
 * [vale](https://vale.dev/)
@@ -39,3 +41,4 @@ Up and coming languages make a variety of imprecise claims about features with n
 * [Dyon](https://github.com/PistonDevelopers/dyon)
 * [D](https://dlang.org/)
 * [Ante](https://antelang.org/)
+* [Carbon](https://github.com/carbon-language/carbon-lang)
